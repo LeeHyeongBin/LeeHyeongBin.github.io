@@ -1,30 +1,51 @@
 <HTML>
 <HEAD>
-	<meta http=equiv=â€œContent-Typeâ€ content=â€œtext/heml;charset=euc-krâ€>
 <STYLE type = "text/css">
-a{font-family:ë‚˜ëˆ”ê³ ë”•; font-size:20pt; line-height:10pt}
+a{font-family:³ª´®°íµñ; font-size:20pt; line-height:10pt}
 a:link{color:black;}
 a:visited{color:black;}
 body{background:url(bg9.jpg) no-repeat scroll;
 background-size: 100% 100%;}
 </STYLE>
+
+<script>
+window.onload = function () {
+
+var count = 0;
+var image = document.getElementById('image');
+var frames = [
+'0.png', '1.png', '2.png', '3.png', '4.png',
+'5.png', '6.png', '7.png', '8.png', '9.png',
+'10.png', '11.png', '12.png', '13.png', '14.png',
+];
+
+setInterval(function () {
+image.src = frames[count % frames.length];
+count = count + 1;
+}, 1000 / 20);
+};
+</script>
+
 </HEAD>
 <BODY>
 <br>
 	<CENTER>
-			<FONT size='7' face='HY ì¤‘ê³ ë”•ì²´' color='PURPLE'>
-			ìì·¨ ì•„ì´í…œ<br><br>
-
+			<FONT size='7' face='HY Áß°íµñÃ¼' color='PURPLE'>
+			ÀÚÃë ¾ÆÀÌÅÛ<br>
+			<img id="image" />
 			<a href="https://www.youtube.com/watch?v=wDmqshp02PU" target="_blank">
 			<img src = "mk1.png"> </a>
 			<a href="https://www.youtube.com/watch?v=_98PGUEoIkY" target="_blank">
-			<img src = "mk2.png"> </a><P>
+			<img src = "mk2.png"> </a>
 			<a href="https://www.youtube.com/watch?v=PP4cP5jgngI" target="_blank">
 			<img src = "mk3.jpg"> </a>
 			<a href="https://www.youtube.com/watch?v=hsS8iyYaX4U" target="_blank">
-			<img src = "mk4.jpg"> </a><P>
+			<img src = "mk4.jpg"> </a>
 			</FONT><P>
 	</CENTER>
 </BODY>
-
+<script>
+var array = ['ÀÚÃë ¿ä¸®', 'ÀÚÃë Ã»¼Ò', 'ÀÚÃë ¾ÆÀÌÅÛ', '¿©·¯°¡Áö ²ÜÆÁ'];
+alert(array[2]);
+</script>
 </HTML>
